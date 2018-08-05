@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".fragment.DashBordFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFruits"
+        android:text="Fruits"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_dark"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtFruits"
+        android:src="@drawable/fresh_red_apple_stock_photo_167147" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtApple"
+        android:text="Apple"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@color/design_default_color_primary_dark"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/txtFruits"
+        android:src="@drawable/papaya" />
+
+    <TextView
+        android:id="@+id/txtPapaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="150dp"
+        android:text="Papaya"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/imKiwi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtPapaya"
+        android:src="@drawable/mango"/>
+
+    <TextView
+        android:id="@+id/txtKiwi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imKiwi"
+        android:text="Kiwi"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/txtPapaya"
+        android:src="@drawable/strawberry" />
+    <TextView
+        android:id="@+id/txtStrawberry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/imageView4"
+        android:text="Strawberry"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtStrawberry"
+        android:src="@drawable/lychee" />
+    <TextView
+        android:id="@+id/txtLychee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lychee"
+        android:layout_below="@+id/imageView5"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtStrawberry"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/mango"/>
+
+    <TextView
+        android:id="@+id/txtMongo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginLeft="150dp"
+        android:text="Mango"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtLychee"
+        android:src="@drawable/lychee" />
+    <TextView
+        android:id="@+id/txtLychee1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lychee"
+        android:layout_below="@+id/imageView7"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/txtMongo"
+        android:src="@drawable/strawberry" />
+    <TextView
+        android:id="@+id/txtStrawberry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="strawberry"
+        android:layout_below="@+id/imageView8"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

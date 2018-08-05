@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/txtFruits"
+        android:text="Fruits"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_primary_dark"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/fresh_red_apple_stock_photo_167147" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtApple"
+                android:text="Apple"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/design_default_color_primary_dark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/lychee" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLychee"
+                android:text="Lychee"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/design_default_color_primary_dark"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/kiwi" />
+
+            <TextView
+                android:id="@+id/txtKiwi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kiwi"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/strawberry" />
+
+            <TextView
+                android:id="@+id/txtStrawberry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Strawberry"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/papaya" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPapaya"
+                android:text="Papaya"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/design_default_color_primary_dark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/mango" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMongo"
+                android:text="Mango"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/design_default_color_primary_dark"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

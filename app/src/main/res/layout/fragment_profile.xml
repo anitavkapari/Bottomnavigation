@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".fragment.ProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anita"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saswad"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9763075433"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>
