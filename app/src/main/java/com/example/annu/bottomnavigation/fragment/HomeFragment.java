@@ -19,10 +19,12 @@ import com.example.annu.bottomnavigation.activity.MainActivity;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
+/*
 public Spinner spnCity;
+*/
 public Button  btnSave;
 
-String[] city={"Wagholi", "Hadapsar","Hinjebadi","Saswad","Sawarget","VimanNager"};
+//String[] city={"Wagholi", "Hadapsar","Hinjebadi","Saswad","Sawarget","VimanNager"};
 
 
     public HomeFragment() {
@@ -35,7 +37,7 @@ String[] city={"Wagholi", "Hadapsar","Hinjebadi","Saswad","Sawarget","VimanNager
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         //noinspection MoveFieldAssignmentToInitializer
-        spnCity=view.findViewById(R.id.spnCity);
+        /*spnCity=view.findViewById(R.id.spnCity);
         btnSave=view.findViewById( R.id.btnSave );
         ArrayAdapter<String> cityAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_dropdown_item_1line,city);
         spnCity.setAdapter(cityAdapter);
@@ -44,7 +46,7 @@ String[] city={"Wagholi", "Hadapsar","Hinjebadi","Saswad","Sawarget","VimanNager
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"\ncity : " +spnCity.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
         // Inflate the layout for this fragment
 
         return view;

@@ -4,22 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="20dp"
     tools:context=".fragment.DashBordFragment">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        android:id="@+id/imgPerson"/>
     <TextView
-        android:id="@+id/lblName"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name of ur Area"
-        android:textSize="20sp" />
+        android:text="Name"
+        />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:hint="Name"
+        />
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+         />
 
-    <Spinner
-        android:id="@+id/spnCity"
-        android:layout_width="201dp"
-        android:layout_height="wrap_content"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPhone"
+        android:hint="Address "
+        />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Phone"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnAddress"
+        android:hint="Phone"
+        />
+
 
     <Button
         android:id="@+id/btnSave"
