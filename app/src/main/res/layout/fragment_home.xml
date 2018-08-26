@@ -35,7 +35,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtPhone"
+        android:id="@+id/edtAddress"
         android:hint="Address "
         />
 
@@ -48,7 +48,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtnAddress"
+        android:id="@+id/edtPhone"
         android:hint="Phone"
         />
 

@@ -12,13 +12,13 @@ import com.example.annu.bottomnavigation.RecyclerclickListner;
 
 public class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
     ImageView imgperson;
-    TextView getTxtName,getTxtAddress,getTxtPhone;
-RecyclerclickListner listner;
+    ImageButton btnDelete;
+    TextView txtName,txtAddress,txtPhone;
+    RecyclerclickListner listner;
 
-    TextView txtName,txtPhone,txtAddress;
     public PersonViewHolder(@NonNull View itemView) {
         super( itemView );
-        imgperson = itemView.findViewById( R.id.imgPerson );
+       // imgperson = itemView.findViewById( R.id.imgPerson );
         txtName = itemView.findViewById( R.id.txtName );
         txtAddress = itemView.findViewById( R.id.txtAddress );
         txtPhone = itemView.findViewById( R.id.txtPhone );
@@ -28,9 +28,5 @@ RecyclerclickListner listner;
     public void onClick(View view){
         listner.onClick( view,getAdapterPosition() );
     }
-
-       /* @Override
-        public void onClick(View ) {
-            listener.onClick(view,getAdapterPosition());}*/
 
     }

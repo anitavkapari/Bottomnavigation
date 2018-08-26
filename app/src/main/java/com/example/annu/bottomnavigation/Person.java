@@ -1,26 +1,33 @@
 package com.example.annu.bottomnavigation;
 
 public class Person {
-    private int imageId;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
+   // private String image;
     private String name;
     private String address;
     private String phone;
 
 
-    public Person(int imageId, String name, String address, String phone) {
-        this.imageId = imageId;
+    public Person( String name, String address, String phone) {
+        this.id= id;
+        //this.image = image;
         this.name = name;
         this.address = address;
         this.phone = phone;
     }
-    public int getImageId() {
-        return imageId;
+    public int getId() { return id;
+    }
+    /*public String getImage() {
+        return name;
     }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
-    }
-
+    public void setImage(String image) {
+        this.name = name;
+    }*/
     public String getName() {
         return name;
     }
@@ -44,5 +51,6 @@ public class Person {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
 
 }

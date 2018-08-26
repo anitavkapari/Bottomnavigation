@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.annu.bottomnavigation.DB.DBHelper;
 import com.example.annu.bottomnavigation.Person;
 import com.example.annu.bottomnavigation.R;
 import com.example.annu.bottomnavigation.RecyclerclickListner;
@@ -21,9 +22,9 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public  class ProfileFragment extends Fragment implements RecyclerclickListner {
+public  class ProfileFragment extends Fragment /*implements RecyclerclickListner*/ {
     RecyclerView rvPerson;
-    private List<Person> personList;
+    //private List<Person> personList;
 
 
     public ProfileFragment() {
@@ -38,20 +39,23 @@ public  class ProfileFragment extends Fragment implements RecyclerclickListner {
         rvPerson = view.findViewById( R.id.rvPerson );
         //rvPerson.setLayoutManager(new LinearLayoutManager(this));
         rvPerson.setLayoutManager( new LinearLayoutManager( getActivity( ) ) );
-        personList = new ArrayList<>( );
+        DBHelper dbholder=new DBHelper( getActivity() );//
+        List<Person> persons=dbholder.getAllPerson();//
         //adding data list
-        personList.add( new Person( R.drawable.profile,
-                "Anita.", "Saswad", "9763075433" ) );
-        PersonListAdapter personListAdapter = new PersonListAdapter( personList, this );
-        rvPerson.setAdapter( personListAdapter );
+       /* personList.add( new Person( R.drawable.profile,
+                "Anita.", "Saswad", "9763075433" ) );*/
+       // PersonListAdapter personListAdapter = new PersonListAdapter( persons ,this);
+        PersonListAdapter adapter=new PersonListAdapter(persons , (RecyclerclickListner) dbholder );
+        rvPerson.setAdapter( adapter );
         return view;
+
 
         // Inflate the layout for this fragment
     }
-    @Override
+    /*@Override
     public void onClick(View view, int position) {
-        Person student = personList.get(position);
+        //Person student = personList.get(position);
        //Toast.makeText(this, position.ge
-    }
+    }*/
 
 }
