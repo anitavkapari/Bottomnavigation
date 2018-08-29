@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.example.annu.bottomnavigation.R;
 import com.example.annu.bottomnavigation.RecyclerclickListner;
 
-public class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+public class PersonViewHolder extends RecyclerView.ViewHolder {//implements View.OnClickListener{
     ImageView imgperson;
     ImageButton btnDelete;
     TextView txtName,txtAddress,txtPhone;
@@ -22,11 +22,13 @@ public class PersonViewHolder extends RecyclerView.ViewHolder implements View.On
         txtName = itemView.findViewById( R.id.txtName );
         txtAddress = itemView.findViewById( R.id.txtAddress );
         txtPhone = itemView.findViewById( R.id.txtPhone );
-        itemView.setOnClickListener( this );
+        btnDelete = itemView.findViewById( R.id.btnDelete );
+
+        //itemView.setOnClickListener( this );
     }
-   @Override
+   /*@Override
     public void onClick(View view){
         listner.onClick( view,getAdapterPosition() );
     }
-
+*/
     }

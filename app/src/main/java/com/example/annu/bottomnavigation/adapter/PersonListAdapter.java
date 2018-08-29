@@ -17,14 +17,14 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonViewHolder> {
     List<Person> persons;
     DBHelper dbHelper;
 
-   // public PersonListAdapter(List<Person> persons, DBHelper dbHelper) { //constructor
-       // this.persons = persons;
-        //this.dbHelper = dbHelper;
+   public PersonListAdapter(List<Person> persons, DBHelper dbHelper) { //constructor
+        this.persons = persons;
+        this.dbHelper = dbHelper;
 
-    List<Person> personList; RecyclerclickListner listener;
+   /* List<Person> personList; RecyclerclickListner listener;
     public PersonListAdapter(List<Person> studentList, RecyclerclickListner listener) {
         this.personList = studentList;
-        this.listener = listener;
+        this.listener = listener;*/
     }
 
 

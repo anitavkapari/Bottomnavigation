@@ -45,7 +45,7 @@ public  class ProfileFragment extends Fragment /*implements RecyclerclickListner
        /* personList.add( new Person( R.drawable.profile,
                 "Anita.", "Saswad", "9763075433" ) );*/
        // PersonListAdapter personListAdapter = new PersonListAdapter( persons ,this);
-        PersonListAdapter adapter=new PersonListAdapter(persons , (RecyclerclickListner) dbholder );
+        PersonListAdapter adapter=new PersonListAdapter(persons ,dbholder );
         rvPerson.setAdapter( adapter );
         return view;
 
